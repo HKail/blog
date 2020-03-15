@@ -1,0 +1,14 @@
+{
+  "sys_conf": {
+    "port": ":8001",
+    "secret_key": "Cole Lie",
+    "page_size": 6
+  },
+  "db_conf": {
+    "addr": "127.0.0.1:3306",
+    "user": "root",
+    "pwd": "root",
+    "name": "db_zeus",
+    "log_mode": true
+  }
+}

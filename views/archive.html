@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>Cole Lie 博客丨归档</title>
+    {{ template "tpl-linker.html" . }}
+</head>
+<body>
+{{ template "tpl-navigate.html" . }}
+<div id="main">
+    <article class="post archive">
+        <h1 class="title">归档</h1>
+        {{ range .archives }}
+        <div class="entry-content">
+            <h3>{{ format .Time "2006年01月" }} ({{ len .Posts }})</h3>
+            <ul>
+                {{ range .Posts }}
+                <li>
+                    <a href="/post/{{ .Path }}.html" title="{{ .Title }}">{{ .Title }}</a>
+                    &nbsp;
+                    <span class="date">{{ format .PublishedAt "2006/01/02" }}</span>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        {{end}}
+    </article>
+</div>
+{{ template "tpl-footer.html" . }}
+</body>
+</html>
