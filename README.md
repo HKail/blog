@@ -1,8 +1,6 @@
 # Blog
 
-> 使用 Go 作为开发语言, Gin 作为 Web 层框架, GORM 作为持久层框架开发的博客 
-> 
-> 预览地址: https://miraclie.cn
+> 使用 Go 作为开发语言, Gin 作为 Web 层框架, GORM 作为持久层框架开发的博客
 
 ## 技术栈
 
